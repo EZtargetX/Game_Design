@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
         Debug.Log(horizontal);
         Debug.Log(vertical);
         Vector2 position = transform.position;
-        position.x = position.x + 1.0f * horizontal * Time.deltaTime; // It's key to add the time variable so that movement is synced across all types of framerate!
-        position.y = position.y + 2.0f * vertical * Time.deltaTime;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime; // It's key to add the time variable so that movement is synced across all types of framerate!
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
         transform.position = position;
     }
 }

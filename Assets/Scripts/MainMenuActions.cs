@@ -8,12 +8,12 @@ public class MainMenuActions : MonoBehaviour
 {
     public void GoToTutorial()
     {
-        SceneManager.LoadScene("HowToPlay");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void GoLevelSelect()
     {
-        SceneManager.LoadScene("Level_Select");
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void GoToOptions()

@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 122188272}
   - component: {fileID: 122188271}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 297748310}
   - component: {fileID: 297748309}
   - component: {fileID: 297748308}
+  - component: {fileID: 297748311}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -376,6 +377,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &297748311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297748307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882d5da41d7ad7640b1138f69d906e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &419528573
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +402,7 @@ GameObject:
   - component: {fileID: 419528576}
   - component: {fileID: 419528575}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,7 +602,7 @@ GameObject:
   - component: {fileID: 503375838}
   - component: {fileID: 503375837}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,13 +672,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2104120097}
+        m_TargetAssemblyTypeName: MainMenuActions, Assembly-CSharp
+        m_MethodName: GoToTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -814,7 +827,7 @@ GameObject:
   - component: {fileID: 904722151}
   - component: {fileID: 904722150}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,7 +960,7 @@ GameObject:
   - component: {fileID: 1039471546}
   - component: {fileID: 1039471545}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1016,7 +1029,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1039471546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1039471546
 MonoBehaviour:
   m_ObjectHideFlags: 0
